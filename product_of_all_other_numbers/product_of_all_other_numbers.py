@@ -3,9 +3,26 @@ Input: a List of integers
 Returns: a List of integers
 '''
 def product_of_all_other_numbers(arr):
-    # Your code here
+    ## with division
+    ## loop through all elements multiplying
+    
+    ## loop again dividing by element at location arr[i]
+        ## append this to new arr and return
+        
+    ## return newarr
+    newarr = []
+    curr = 1
+    
+    for i in range(0, len(arr)):
+        curr *= arr[i] 
+    for i in range(0, len(arr)):
+        newarr.append(curr // arr[i])
 
-    pass
+    return newarr
+
+    
+
+
 
 
 if __name__ == '__main__':
